@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Härens FVO</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Hären ingår i Nissans vattensystem i Anderstorpsåns delavrinningsområde och är belägen strax sydväst om Gnosjö samhälle. Information angående sjön finns här!">
+        <meta name="keywords" content="Hären,Fiske,Gnosjö">
+        <meta name="author" content="Viktor Abrahamsson">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <link rel="icon" href="images/gnosj%C3%B6-kommunvapen.ico">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="main_style.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body onload="init();">
+        
+        <!---------------Nav-bar------------------------------------------------------------------------->
+        
+        <div class="nav_style">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #212121; border-bottom: 5px solid #26d07c;">
+              <a class="navbar-brand" id="nav_title" href="index.html">Härens Fiskevårdsförening</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Hem</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="fiskekort_regler.html">Fiskekort &amp; Regler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="fisk.html">Fiskarter<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.camping.se/sv/campingar/3656/Caravan-Club-Valorna-Camping/" target="_blank">Välorna Camping</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+        
+        <!--------------/Nav-bar------------------------------------------------------------------------->
+        
+        <!---------------Slideshow------------------------------------------------------------------------->
+                
+                <div class="slide-background"></div>
+        
+                <div id="demo" class="carousel slide container" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/slide1.JPG" class="slide_size" id="slide1" alt="Slide 1" >
+                      <div class="carousel-caption">
+                        <a href="https://www.flickr.com/photos/163237748@N08/40590585442/in/dateposted-public/" target="_blank">Hären Gnosjö</a> av <a href="https://www.flickr.com/photos/163237748@N08/" target="_blank">Viktor Abrahamsson</a> / <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>
+                      </div>   
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/slide2.JPG" class="slide_size" id="slide2_350" alt="Slide 2" width="1100" height="500">
+                      <div class="carousel-caption">
+                        <a href="https://www.flickr.com/photos/163237748@N08/40590583702/in/dateposted-public/" target="_blank">Hären Hönö</a> av <a href="https://www.flickr.com/photos/163237748@N08/" target="_blank">Viktor Abrahamsson</a> / <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>
+                      </div>   
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/fiskedrag.JPG" class="slide_size" id="slide3_350" alt="Slide 3" width="1100" height="500">
+                      <div class="carousel-caption">
+                        <a href="https://www.flickr.com/photos/163237748@N08/38822207240/" target="_blank">Hären Fiskedrag</a> av <a href="https://www.flickr.com/photos/163237748@N08/" target="_blank">Viktor Abrahamsson</a> / <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>
+                      </div>   
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+        <!--------------/Slideshow------------------------------------------------------------------------->
+        
+        <!---------------Cards------------------------------------------------------------------------->
+            
+        <div class="flex_index">
+            
+            <div class="flex_index_container_fiskarter">
+                <div class="flex_center_x">
+                    <div class="index_img3"></div>
+                </div>
+
+                <h2><a href="historia.html">Fiskarter</a></h2>
+                <div class="fiskarter_container">    
+                    <img src="images/Abborre.png" class="fiskart" id="height" title="Abborre" alt="Abborre"/>
+                    <img src="images/Benloja.PNG" class="fiskart" id="height" title="Benlöja" alt="Benköja"/>
+                    <img src="images/Braxen.PNG" class="fiskart" id="height" title="Braxen" alt="Braxen"/>
+                    <img src="images/Gadda.png" class="fiskart" id="height" title="Gädda" alt="Gädda"/>
+                    <img src="images/Gers.PNG" class="fiskart" id="height" title="Gers" alt="Gers"/>
+                    <img src="images/Gos.PNG" class="fiskart" id="height" title="Gös" alt="Gös"/>
+                    <img src="images/Lake.PNG" class="fiskart" id="height" title="Lake" alt="Lake"/>
+                    <img src="images/al.png" class="fiskart" id="al" title="Ål" alt="Ål"/>
+                </div>    
+
+            </div>
+        </div>
+        
+        <!--------------/Cards------------------------------------------------------------------------->
+        
+        <!---------------Footer------------------------------------------------------------------------->
+        
+        <footer>
+            <div class="flex_center_x_y">
+                <div class="left_footer">
+                    <address>
+                        <p><em>Ordförande:</em> Göran Eriksson</p>
+                        <p><em>Telefon:</em> 072-249 27 12</p>
+                        <p><em>Email:</em> <a href="mailto:goran@harensten.se">goran@harensten.se</a></p>
+                    </address>
+                </div>
+                <div class="right_footer">
+                    <address>
+                        <p>&#169; <em>2018</em> Hären Fiskeförening</p>
+                        <p><em>Webmaster:</em> Viktor Abrahamsson</p>
+                        <p><em>Email:</em> <a href="mailto:wicke.abrahamsson@gmail.com">wicke.abrahamsson@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>                
+        </footer>
+        
+        <!--------------/Footer------------------------------------------------------------------------->
+        
+    </body>
+</html>
