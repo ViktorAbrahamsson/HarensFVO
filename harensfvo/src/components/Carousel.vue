@@ -15,7 +15,7 @@
       return {
         items: [ /* Copyrighted images from flickr that I have uploaded. */
           { 
-            src: 'https://live.staticflickr.com/4752/25761962937_c5f08cb905_o.jpg'
+            src: 'https://live.staticflickr.com/65535/33874972208_250790a7d9_o.png'
           },
           {
             src: 'https://live.staticflickr.com/4794/40590585442_8621b68613_o.jpg'
