@@ -1,5 +1,6 @@
 <template>
   <nav>
+    <!-- Toolbar that display Title and Menuoptions if the screen is big enought. -->
     <v-toolbar flat app class="toolbar">
       <!-- ToolbarTitle changes depending on screen size. -->
       <v-toolbar-title class="headline text-uppercase"> 
@@ -53,12 +54,16 @@
   }
 </script>
 
-<style>
+<style scoped>
   .toolbar {
     border-bottom: 2px solid #26d07c;
   }
 
   .toolbarItem:hover {
+    color: #26d07c;
+  }
+
+  .v-btn--active {
     color: #26d07c;
   }
 
@@ -78,7 +83,7 @@
     border-bottom: 1px solid rgb(255, 255, 255);
   }
 
-  /* Clickable area of the listItem */
+  /* Clickable area of the listItem. */
   .v-list__tile {
     height: 75px;
   }
@@ -86,4 +91,9 @@
   .listItem:nth-child(1) {
     border-top: 1px solid rgb(255, 255, 255);
   }
+
+  /* Color of the actived menuoption. */
+  .v-btn--active:before, .v-btn:hover:before, .v-btn:focus:before {
+    background-color: #26d07c;
+}
 </style>
