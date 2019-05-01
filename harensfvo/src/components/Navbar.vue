@@ -1,7 +1,7 @@
 <template>
   <nav>
     <!-- Toolbar that display Title and Menuoptions if the screen is big enought. -->
-    <v-toolbar flat app class="toolbar">
+    <v-toolbar flat app fixed class="toolbar">
       <!-- ToolbarTitle changes depending on screen size. -->
       <v-toolbar-title class="headline text-uppercase"> 
         <span id="titleMobile" class="hidden-md-and-up">Härens FVO</span>
@@ -56,7 +56,7 @@
 
 <style scoped>
   .toolbar {
-    border-bottom: 2px solid #26d07c;
+    border-bottom: 4px solid #26d07c;
   }
 
   .toolbarItem:hover {
