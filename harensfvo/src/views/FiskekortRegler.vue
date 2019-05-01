@@ -1,13 +1,14 @@
 <template>
-  <Navbar />
+  <div class="fiskekortRegler">
+    <h1>Fiskekort och Regler</h1>
+  </div>
 </template>
 
 <script>
-  import Navbar from '../components/Navbar'
 
   export default {
     components: {
-      Navbar
+      
     }
   }
 </script>

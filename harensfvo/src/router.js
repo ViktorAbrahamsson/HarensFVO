@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Hem from './views/Hem.vue'
+import FiskekortRegler from './views/FiskekortRegler.vue'
+/*import Historia from './views/Historia.vue'
+import Fiskarter from './views/Fiskarter.vue'
+import Camping from './views/Camping.vue'*/
 
 Vue.use(Router)
 
@@ -10,16 +14,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'hem',
+      component: Hem
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      path: '/fiskekort',
+      name: 'fiskekortregler',
+      component: FiskekortRegler
+    },
+    /*{
+      path: '/historia',
+      name: 'historia',
+      component: Historia
+    },
+    {
+      path: '/fiskarter',
+      name: 'fiskarter',
+      component: Fiskarter
+    },
+    {
+      path: '/camping',
+      name: 'camping',
+      component: Camping
+    }*/
   ]
 })
