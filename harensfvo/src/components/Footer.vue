@@ -11,30 +11,17 @@
     >
       <v-card-title class="greenCyan">
         <strong class="subheading footerTitleText">Kontakta oss</strong>
-
-        <v-spacer></v-spacer>
-
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-3"
-          dark
-          icon
-        >
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
       </v-card-title>
 
       <v-card-text class="footerText">
           <address>
-              <p><em>Ordförande:</em> Göran Ericsson</p>
-              <p><em>Telefon:</em> 072-249 27 12</p>
-              <p><em>Email: </em> <a href="mailto:goran@harensten.se">goran@harensten.se</a></p>
+              <p><v-icon class="greenCyan--text">gavel</v-icon> Göran Ericsson</p>
+              <p><v-icon class="greenCyan--text">phone</v-icon> 072-249 27 12</p>
+              <p><v-icon class="greenCyan--text">email</v-icon> <a href="mailto:goran@harensten.se"> goran@harensten.se</a></p>
           </address><br/>
           <address>
-              <p><em>Webmaster:</em> Viktor Abrahamsson</p>
-              <p><em>Telefon:</em> 070-612 93 98</p>
-              <p><em>Email: </em> <a href="mailto:wicke.abrahamsson@gmail.com">wicke.abrahamsson@gmail.com</a></p>
+              <p><v-icon class="greenCyan--text">developer_mode</v-icon> Viktor Abrahamsson</p>
+              <p><v-icon class="greenCyan--text">email</v-icon> <a href="mailto:wicke.abrahamsson@gmail.com"> wicke.abrahamsson@gmail.com</a></p>
           </address>
       </v-card-text>
 
@@ -74,12 +61,9 @@
         background: #161616;
     }
 
-    a {
-        color: #ffffff;
-    }
+    a, a:hover, a:visited {
+        color: #26d07c;
+        text-decoration: none;
+    }    
 
-    a:hover {
-        color: #ffffff;
-    }
-    
 </style>
