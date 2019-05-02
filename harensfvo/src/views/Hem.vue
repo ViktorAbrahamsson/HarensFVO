@@ -43,9 +43,9 @@
         </div>
         <div class="containerStyle containerImage">
           <!-- Mobile/Tablet Image -->
-          <v-img contain src="/djupkarta.png" class="image hidden-md-and-up" alt="Djupkarta över Hären"></v-img>
+          <v-img contain src="/djupkarta.png" class="image hidden-md-and-up" alt="Djupkarta över Hären" title="Djupkarta"></v-img>
           <!-- Desktop Image -->
-          <v-img contain src="/djupkarta.png" class="image hidden-sm-and-down" alt="Djupkarta över Hären"></v-img>
+          <v-img contain src="/djupkarta.png" class="image hidden-sm-and-down" alt="Djupkarta över Hären" title="Djupkarta"></v-img>
         </div>
     </v-layout>
   </div>
@@ -67,13 +67,13 @@
         ],
 
         facts: [
-          { title: 'Huvudavrinningsområde', value: '101, Nissan', id: '1' },
-          { title: 'Höjd över havet', value: '163 m', id: '2' },
-          { title: 'Areal', value: '4,01 km²', id: '3' },
-          { title: 'Maxdjup', value: '10,7 m', id: '4' },
-          { title: 'Medeldjup', value: '2,6 m', id: '5' },
-          { title: 'Volym (Miljoner)', value: '10,4 m³', id: '6' },
-          { title: 'Avr.-område', value: '106,9 km²', id: '7' }
+          { title: 'Huvudavrinningsområde', value: '101,Nissan', id: '1' },
+          { title: 'Höjd över havet', value: '163m', id: '2' },
+          { title: 'Areal', value: '4,01km²', id: '3' },
+          { title: 'Maxdjup', value: '10,7m', id: '4' },
+          { title: 'Medeldjup', value: '2,6m', id: '5' },
+          { title: 'Volym i miljoner', value: '10,4m³', id: '6' },
+          { title: 'Avr.-område', value: '106,9km²', id: '7' }
         ]
       }
     }
@@ -82,7 +82,8 @@
 
 <style scoped>
   .cardContent {
-    margin-top: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .card {
