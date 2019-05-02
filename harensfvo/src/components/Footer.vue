@@ -9,9 +9,9 @@
       flat
       tile
     >
-      <v-card-title class="greenCyan">
+      <!--<v-card-title class="greenCyan">
         <strong class="subheading footerTitleText">Kontakta oss</strong>
-      </v-card-title>
+      </v-card-title>-->
 
       <v-card-text class="footerText">
           <address>
@@ -51,6 +51,7 @@
         font-size: 17px;
         display: flex;
         flex-wrap: wrap;
+        border-top: 5px solid #26d07c;
     }
 
     .footerText address {
