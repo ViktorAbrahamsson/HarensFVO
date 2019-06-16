@@ -45,8 +45,8 @@
         links: [
           { icon: 'home', text: 'Hem', route: '/' },
           { icon: 'book', text: 'Fiskekort & Regler', route: '/fiskekort' },
-          { icon: 'info', text: 'Historia', route: '/historia' },
           { icon: 'nature', text: 'Fiskarter', route: '/fiskarter' },
+          { icon: 'info', text: 'Information', route: '/information' },
           { icon: 'link', text: 'Camping', route: '/camping' },
         ]
       }
