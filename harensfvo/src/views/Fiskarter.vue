@@ -38,12 +38,6 @@
 
 <style scoped>
 
-  .containerStyle {
-    width: 100%;
-    padding: 20px;
-    margin: 30px 30px;
-  }
-
   table {
     background: #fff;
     margin: 0 auto;

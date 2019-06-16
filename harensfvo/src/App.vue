@@ -32,4 +32,10 @@ export default {
     color: #26d07c;
   }
 
+  .containerStyle {
+    width: 100%;
+    padding: 20px;
+    margin: 30px 30px;
+  }
+
 </style>
