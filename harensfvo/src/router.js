@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hem from './views/Hem.vue'
 import FiskekortRegler from './views/FiskekortRegler.vue'
-/*import Historia from './views/Historia.vue'
+import Information from './views/Information.vue'
 import Fiskarter from './views/Fiskarter.vue'
-import Camping from './views/Camping.vue'*/
+import Camping from './views/Camping.vue'
 
 Vue.use(Router)
 
@@ -22,10 +22,10 @@ export default new Router({
       name: 'fiskekortregler',
       component: FiskekortRegler
     },
-    /*{
-      path: '/historia',
-      name: 'historia',
-      component: Historia
+    {
+      path: '/information',
+      name: 'information',
+      component: Information
     },
     {
       path: '/fiskarter',
@@ -36,6 +36,6 @@ export default new Router({
       path: '/camping',
       name: 'camping',
       component: Camping
-    }*/
+    }
   ]
 })

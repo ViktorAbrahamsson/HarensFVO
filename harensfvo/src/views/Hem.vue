@@ -62,7 +62,7 @@
       return {
         cards: [
           { title: 'Fiskekort & Regler', text: 'Här kan du ta reda på alla gällande priser och regler som är kopplade till fisket i Hären.', id: '1', img: 'https://images.pexels.com/photos/294674/pexels-photo-294674.jpeg?cs=srgb&dl=activity-adult-bait-294674.jpg&fm=jpg', route: '/fiskekort' },
-          { title: 'Historia', text: 'Hären med flera sjöars fiskevårdsområde bildades 1938. En gemensam strävan var att vårda och bevara de sjöar som vid den tiden låg inom föreningens förvaltarskap.', id: '2', img: 'https://live.staticflickr.com/65535/32808671217_2a9bd1e732_o.jpg', route: '/historia' },
+          { title: 'Information', text: 'Hären med flera sjöars fiskevårdsområde bildades 1938. En gemensam strävan var att vårda och bevara de sjöar som vid den tiden låg inom föreningens förvaltarskap.', id: '2', img: 'https://live.staticflickr.com/65535/32808671217_2a9bd1e732_o.jpg', route: '/information' },
           { title: 'Fiskarter', text: 'I Hären finns det 8 stycken fiskarter, exempelvis Gädda och Gös.', id: '3', img: 'https://live.staticflickr.com/4752/25761962937_c5f08cb905_o.jpg', route: '/fiskarter' }
         ],
 
@@ -82,8 +82,8 @@
 
 <style scoped>
   .cardContent {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .card {
@@ -99,7 +99,6 @@
     width: 100%;
     padding: 20px;
     margin: 30px 30px;
-    
   }
 
   .containerText h1 {

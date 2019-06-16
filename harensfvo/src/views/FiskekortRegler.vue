@@ -1,23 +1,23 @@
 <template>
   <div>    
     <v-layout justify-center wrap row>
-        <div class="containerStyle containerText">
-          <h1 class="greenCyan--text">Fiskekort</h1>
-          <table>   
-            <tr v-for="fact in facts" :key="fact.id">
-              <td>{{ fact.title }}</td>
-              <td>{{ fact.value }}</td>
-            </tr> 
-          </table>
-        </div>
+      <div class="containerStyle containerText">
+        <h1 class="greenCyan--text">Fiskekort</h1>
+        <table>   
+          <tr v-for="fact in facts" :key="fact.id">
+            <td>{{ fact.title }}</td>
+            <td>{{ fact.value }}</td>
+          </tr> 
+        </table>
+      </div>
 
-        <div class="containerStyle containerText">
-          <h1 class="greenCyan--text">Regler</h1>
-          <div v-for="regel in regler" :key="regel.id" class="mt-3">
-            <h2>{{ regel.title }}</h2>
-            <div class="text-xs-center">{{ regel.value }}</div>
-          </div>
+      <div class="containerStyle containerText">
+        <h1 class="greenCyan--text">Regler</h1>
+        <div v-for="regel in regler" :key="regel.id" class="mt-3">
+          <h2>{{ regel.title }}</h2>
+          <div class="text-xs-center">{{ regel.value }}</div>
         </div>
+      </div>
     </v-layout>
       
   </div>
