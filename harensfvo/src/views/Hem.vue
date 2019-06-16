@@ -15,7 +15,7 @@
 
             <v-card-title>
               <div>
-                <span><strong>{{ card.title }}</strong></span>
+                <span><strong class="greenCyan--text">{{ card.title }}</strong></span>
               </div>
             </v-card-title>
 
@@ -26,14 +26,14 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn flat router :to="card.route">Läs mer</v-btn>
+              <v-btn flat router :to="card.route" class="greenCyan--text">Läs mer</v-btn>
             </v-card-actions>
           </v-card>
       </v-layout>
     </div>
     <v-layout justify-center wrap row>
         <div class="containerStyle containerText">
-          <h1>Fakta &amp; Djupkarta</h1>
+          <h1 class="greenCyan--text">Fakta &amp; Djupkarta</h1>
           <table>   
             <tr v-for="fact in facts" :key="fact.id">
               <td>{{ fact.title }}</td>
