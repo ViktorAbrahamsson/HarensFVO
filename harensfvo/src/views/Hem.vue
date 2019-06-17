@@ -33,7 +33,7 @@
     </div>
     <v-layout justify-center wrap row>
         <div class="containerStyle containerText">
-          <h1 class="greenCyan--text">Fakta &amp; Djupkarta</h1>
+          <h1 class="greenCyan--text text-xs-center">Fakta &amp; Djupkarta</h1>
           <table>   
             <tr v-for="fact in facts" :key="fact.id">
               <td>{{ fact.title }}</td>
