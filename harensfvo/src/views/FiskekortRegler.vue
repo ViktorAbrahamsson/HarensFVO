@@ -15,7 +15,7 @@
         <h1 class="greenCyan--text">Regler</h1>
         <div v-for="regel in regler" :key="regel.id" class="mt-3">
           <h2>{{ regel.title }}</h2>
-          <div class="text-xs-center">{{ regel.value }}</div>
+          <div class="text-xs-center reglerInfo">{{ regel.value }}</div>
         </div>
       </div>
     </v-layout>
@@ -102,5 +102,54 @@
     border:none;
     padding: 0;
     margin-bottom: 5rem;
+  }
+
+   /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+  @media (min-width: 1281px) {
+    .reglerInfo {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .reglerInfo {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .reglerInfo {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+  }
+
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  */
+  @media (min-width: 375px) and (max-width: 480px) {
+    
   }
 </style>
