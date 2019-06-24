@@ -29,7 +29,8 @@
           { title: 'Gers', id: '5' },
           { title: 'Gös', id: '6' },
           { title: 'Lake', id: '7' },
-          { title: 'Ål', id: '8' }
+          { title: 'Mört', id: '8' },
+          { title: 'Ål', id: '9' }
         ]
       }
     }
