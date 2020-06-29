@@ -7,30 +7,33 @@
 
       <v-card-text class="footerText">
         <address>
-          <p><v-icon class="greenCyan--text">gavel</v-icon> Göran Ericsson</p>
-          <p><v-icon class="greenCyan--text">phone</v-icon> 072-249 27 12</p>
+          <p>
+            <v-icon class="greenCyan--text" title="Ordförande">gavel</v-icon>Göran Ericsson
+          </p>
+          <p>
+            <v-icon class="greenCyan--text">phone</v-icon>072-249 27 12
+          </p>
           <p>
             <v-icon class="greenCyan--text">email</v-icon>
-            <a href="mailto:goran@harensten.se"> goran@harensten.se</a>
+            <a href="mailto:goran@harensten.se">goran@harensten.se</a>
           </p>
         </address>
         <br />
         <address>
           <p>
-            <v-icon class="greenCyan--text">developer_mode</v-icon> Viktor
+            <v-icon class="greenCyan--text" title="Utvecklare">developer_mode</v-icon>Viktor
             Abrahamsson
           </p>
           <p>
             <v-icon class="greenCyan--text">email</v-icon>
-            <a href="mailto:wicke.abrahamsson@gmail.com">
-              wicke.abrahamsson@gmail.com</a
-            >
+            <a href="mailto:wicke.abrahamsson@gmail.com">wicke.abrahamsson@gmail.com</a>
           </p>
         </address>
       </v-card-text>
 
       <v-card-actions class="footerCC justify-center">
-        &copy;2020 — <strong>HärensFVO</strong>
+        &copy;2020 —
+        <strong>HärensFVO</strong>
       </v-card-actions>
     </v-card>
   </v-footer>
@@ -38,7 +41,7 @@
 
 <script>
 export default {
-  data: () => ({}),
+  data: () => ({})
 };
 </script>
 

@@ -4,8 +4,10 @@
       <div class="containerStyle containerText">
         <h1 class="greenCyan--text">Fiskekort</h1>
         <p>
-          Kontakta <a href="mailto:goran@harensten.se">Göran Ericsson</a> för
-          betalning.
+          Vid betalning av fiskekort, besök
+          <a
+            href="https://www.fiskekort.se/app/index.php?page=cards&shop=514"
+          >Fiskekort.se</a>.
         </p>
         <table>
           <tr v-for="fact in facts" :key="fact.id">
@@ -36,48 +38,48 @@ export default {
         { title: "Veckokort", value: "150kr", id: "2" },
         { title: "Årskort", value: "300kr", id: "3" },
         { title: "Angelkort", value: "100kr", id: "4" },
-        { title: "Angel ismetekort", value: "10kr", id: "5" },
+        { title: "Angel ismetekort", value: "10kr", id: "5" }
       ],
       regler: [
         {
           title: "Angel-ismetetävling",
           value:
             "Klubbar, föreningar och företag. Endast intern tävling. Max 5 angel-ismete per deltagare. Avgift per påbörjat tiotal deltagare 300kr.",
-          id: "1",
+          id: "1"
         },
         {
           title: "Metartävling & pimpeltävling",
           value:
             "Klubbar, föreningar eller företag. Metartävling, pimpeltävling eller annan tillställning. Per tillfälle 300kr.",
-          id: "2",
+          id: "2"
         },
         {
           title: "Öppna tillställningar (Tävlingar)",
           value:
             "Klubbar eller föreningar som har öppna tillställningar (Tävlingar) 5kr/pers dock lägst 500kr.",
-          id: "3",
+          id: "3"
         },
         {
           title: "Korpfisketävlingar",
           value:
             "Klubbar eller föreningar som har öppna tillställningar (Tävlingar) 5kr/pers dock lägst 500kr.",
-          id: "4",
+          id: "4"
         },
         {
           title: "Gästfiskekort för stugägare",
           value:
             "Gästfiskekort för stugägare. Årskort, datum till datum, 500kr. per kort. Max 2 st per stuga Vid flera personer gäller tillköp av vanliga kort.",
-          id: "5",
+          id: "5"
         },
         {
           title: "Fisketillstånd Företag & Förening",
           value:
             "Företag eller förening kan köpa årsvis fisketillståd för anställda eller medlemmar efter överenskommelse med fiskevårdsområdet.",
-          id: "6",
-        },
-      ],
+          id: "6"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
