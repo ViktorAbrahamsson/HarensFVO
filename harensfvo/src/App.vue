@@ -1,7 +1,7 @@
 <template>
   <v-app light>
     <Navbar />
-    <v-content>
+    <v-content class="site-body">
       <router-view></router-view>
     </v-content>
     <Footer />
@@ -27,6 +27,13 @@ export default {
 </script>
 
 <style>
+
+  @media screen and (min-width: 900px) {
+    .site-body {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
 
   em {
     color: #26d07c;

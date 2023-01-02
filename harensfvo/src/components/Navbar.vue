@@ -72,6 +72,14 @@ export default {
 <style scoped>
 .toolbar {
   border-bottom: 4px solid #26d07c;
+  
+}
+
+@media screen and (min-width: 900px) {
+  .v-toolbar__content {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .toolbarItem:hover {

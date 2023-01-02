@@ -34,9 +34,9 @@ export default {
   data() {
     return {
       facts: [
-        { title: "Dygnskort", value: "50kr", id: "1" },
-        { title: "Veckokort", value: "150kr", id: "2" },
-        { title: "Årskort", value: "300kr", id: "3" },
+        { title: "Dygnskort", value: "70kr", id: "1" },
+        { title: "Veckokort", value: "200kr", id: "2" },
+        { title: "Årskort", value: "500kr", id: "3" },
         { title: "Angelkort", value: "100kr", id: "4" },
         { title: "Angel ismetekort", value: "10kr", id: "5" }
       ],

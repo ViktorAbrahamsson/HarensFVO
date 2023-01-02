@@ -32,7 +32,7 @@
       </v-card-text>
 
       <v-card-actions class="footerCC justify-center">
-        &copy;2020 —
+        &copy;2023 —
         <strong>HärensFVO</strong>
       </v-card-actions>
     </v-card>
@@ -46,6 +46,16 @@ export default {
 </script>
 
 <style scoped>
+
+footer {
+  border-top: 5px solid #26d07c;
+  background: #222;
+}
+
+.theme--dark {
+  background-color: #222;
+}
+
 .footerTitleText {
   margin-left: 50px;
 }
@@ -55,7 +65,9 @@ export default {
   font-size: 17px;
   display: flex;
   flex-wrap: wrap;
-  border-top: 5px solid #26d07c;
+  
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footerText address {
