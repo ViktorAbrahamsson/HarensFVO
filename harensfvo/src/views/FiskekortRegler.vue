@@ -66,16 +66,10 @@ export default {
           id: "4"
         },
         {
-          title: "Gästfiskekort för stugägare",
-          value:
-            "Gästfiskekort för stugägare. Årskort, datum till datum, 500kr. per kort. Max 2 st per stuga Vid flera personer gäller tillköp av vanliga kort.",
-          id: "5"
-        },
-        {
           title: "Fisketillstånd Företag & Förening",
           value:
             "Företag eller förening kan köpa årsvis fisketillståd för anställda eller medlemmar efter överenskommelse med fiskevårdsområdet.",
-          id: "6"
+          id: "5"
         }
       ]
     };
