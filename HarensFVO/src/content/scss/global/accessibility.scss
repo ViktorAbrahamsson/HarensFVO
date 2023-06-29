@@ -1,0 +1,24 @@
+/* Skip to content */
+.skip-to-content {
+  #skip-to-content {
+      position: fixed;
+      top: -25vh;
+      left: 50%;
+      z-index: 999;
+      transform: translateX(-50%);
+
+      background-color: white;
+      color: black;
+      font-size: 2rem;
+      padding: 32px;
+      border-radius: 4px;
+
+      &:focus-visible {
+          top: 24px;
+      }
+
+      @media print {
+          display: none !important;
+      }
+  }    
+}
