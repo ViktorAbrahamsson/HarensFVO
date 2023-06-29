@@ -2,14 +2,14 @@
   <div>
     <v-layout justify-center wrap row>
       <div class="containerStyle">
-        <h1 class="greenCyan--text text-xs-center mb-4">Länk till Välornas Camping</h1>
+        <h1 class="greenCyan--text text-xs-center mb-4">Länk till Gnosjö Strand - Camping & Café</h1>
         <div class="imagePosition">
-          <a target="_blank" href="https://caravanclub.se/camping/valorna/#information">
+          <a target="_blank" href="https://www.gnosjostrand.se">
             <v-img
               contain
               src="/camping_valorna.jpg"
-              alt="Välornas Camping av Västra Småland"
-              title="Välornas camping"
+              alt="Gnosjö Strand Camping"
+              title="Gnosjö Strand Camping"
             ></v-img>
           </a>
         </div>
