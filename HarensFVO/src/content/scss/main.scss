@@ -1,0 +1,19 @@
+
+/**
+* Global
+*/
+@use "./global/normalize.scss";
+@use "./global/variables.scss";
+@use "./global/mixins.scss";
+
+/**
+* Layout
+*/
+@use "./layout/header.scss";
+@use "./layout/body.scss";
+@use "./layout/footer.scss";
+
+/**
+* Components
+*/
+@use "./components/hero-block.scss";
