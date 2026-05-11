@@ -1,0 +1,37 @@
+// ── Color palette ──────────────────────────────────────────
+$color-bg:          #f5f1e8;   // warm parchment — page background
+$color-surface:     #ede9df;   // slightly darker surface / card bg
+$color-border:      #d9d3c6;   // subtle borders
+$color-ink:         #181816;   // near-black text
+$color-muted:       #6b6860;   // secondary text
+$color-forest:      #2c4a2e;   // deep forest green — primary accent
+$color-forest-mid:  #3d6640;   // medium forest (hover states)
+$color-leaf:        #5e8c57;   // lighter green — secondary use
+$color-honey:       #a97240;   // warm honey amber — secondary accent
+$color-honey-light: #c99060;   // lighter honey
+$color-white:       #ffffff;
+$color-overlay:     rgba(14, 22, 12, 0.58);  // hero image overlay
+
+// ── Typography ─────────────────────────────────────────────
+$font-heading: 'Cormorant Garamond', 'Georgia', serif;
+$font-body:    'DM Sans', system-ui, sans-serif;
+
+// ── Layout ─────────────────────────────────────────────────
+$max-width:     1340px;
+$navbar-height: 64px;
+
+// ── Spacing ────────────────────────────────────────────────
+$space-xs:  0.5rem;
+$space-sm:  1rem;
+$space-md:  2rem;
+$space-lg:  4.5rem;
+$space-xl:  7rem;
+
+// ── Breakpoints ────────────────────────────────────────────
+$bp-sm:  640px;
+$bp-md:  960px;
+$bp-lg:  1280px;
+
+// ── Motion ─────────────────────────────────────────────────
+$ease:      cubic-bezier(0.16, 1, 0.3, 1);
+$duration:  0.28s;

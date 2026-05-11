@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+// ── Responsive ─────────────────────────────────────────────
+@mixin sm-down {
+  @media (max-width: #{$bp-sm - 1px}) { @content; }
+}
+
+@mixin md-down {
+  @media (max-width: #{$bp-md - 1px}) { @content; }
+}
+
+@mixin md-up {
+  @media (min-width: $bp-md) { @content; }
+}
+
+@mixin lg-up {
+  @media (min-width: $bp-lg) { @content; }
+}
+
+// ── Layout ─────────────────────────────────────────────────
+@mixin container {
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+  padding-inline: $space-md;
+
+  @include md-down {
+    padding-inline: $space-sm;
+  }
+}
+
+// ── Utilities ──────────────────────────────────────────────
+@mixin lift {
+  transition: transform $duration $ease, box-shadow $duration $ease;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 2px solid $color-forest;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}

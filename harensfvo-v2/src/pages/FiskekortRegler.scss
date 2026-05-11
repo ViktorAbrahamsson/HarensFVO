@@ -1,0 +1,107 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.fishing-permit__buy {
+  background-color: $color-forest;
+  padding-block: $space-md;
+  border-bottom: 1px solid rgba($color-white, 0.1);
+}
+
+.fishing-permit__prices {
+  background-color: $color-bg;
+  border-bottom: 1px solid $color-border;
+}
+
+.fishing-permit__two-col {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: $space-lg;
+  align-items: start;
+
+  @include md-down {
+    grid-template-columns: 1fr;
+    gap: $space-md;
+  }
+}
+
+.fishing-permit__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-muted;
+  margin-bottom: 0.4rem;
+}
+
+.fishing-permit__title {
+  font-family: $font-heading;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: $color-ink;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.fishing-permit__table {
+  margin-top: $space-md;
+  max-width: 400px;
+  border: 1px solid $color-border;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.fishing-permit__note {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  padding-top: calc(#{$space-md} + 1.8rem + 0.5rem + 3px + #{$space-md});
+  font-size: 0.95rem;
+  color: $color-muted;
+  line-height: 1.7;
+  max-width: 44ch;
+
+  @include md-down { padding-top: 0; }
+}
+
+.fishing-permit__rules {
+  background-color: $color-surface;
+}
+
+.fishing-permit__rule-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-md;
+  margin-top: $space-md;
+
+  @include md-down { grid-template-columns: 1fr; }
+}
+
+.fishing-permit__rule {
+  padding: $space-md;
+  background-color: $color-bg;
+  border: 1px solid $color-border;
+  border-top: 3px solid $color-forest;
+  border-radius: 0 0 2px 2px;
+}
+
+.fishing-permit__rule-number {
+  font-family: $font-heading;
+  font-size: 0.8rem;
+  color: $color-forest;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fishing-permit__rule-title {
+  font-family: $font-heading;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $color-ink;
+  margin-bottom: 0.6rem;
+}
+
+.fishing-permit__rule-text {
+  font-size: 0.9rem;
+  color: $color-muted;
+  line-height: 1.7;
+}

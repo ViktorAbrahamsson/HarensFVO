@@ -1,0 +1,86 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.information__layout {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: $space-lg;
+  align-items: start;
+
+  @include md-down {
+    grid-template-columns: 1fr;
+    gap: $space-md;
+  }
+}
+
+.information__aside {
+  position: sticky;
+  top: calc(#{$navbar-height} + #{$space-md});
+
+  @include md-down {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+  }
+}
+
+.information__aside-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-muted;
+  margin-bottom: 0.4rem;
+
+  @include md-down { display: none; }
+}
+
+.information__aside-year {
+  font-family: $font-heading;
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-forest;
+  line-height: 1;
+}
+
+.information__aside-description {
+  font-size: 0.8rem;
+  color: $color-muted;
+  margin-top: 0.3rem;
+  max-width: 14ch;
+
+  @include md-down { max-width: none; }
+}
+
+.information__body {
+  max-width: 68ch;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.information__paragraph {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: $color-ink;
+}
+
+.information__gallery {
+  background-color: $color-surface;
+  border-top: 1px solid $color-border;
+}
+
+.information__gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-sm;
+
+  @include sm-down { grid-template-columns: 1fr; }
+}
+
+.information__gallery-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 2px;
+}

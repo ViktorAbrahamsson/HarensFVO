@@ -1,0 +1,60 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.camping__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-lg;
+  align-items: center;
+
+  @include md-down {
+    grid-template-columns: 1fr;
+    gap: $space-md;
+  }
+}
+
+.camping__photo {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.camping__photo-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.camping__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.camping__content-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-muted;
+}
+
+.camping__content-title {
+  font-family: $font-heading;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 600;
+  color: $color-ink;
+  line-height: 1.1;
+}
+
+.camping__content-text {
+  font-size: 1rem;
+  color: $color-muted;
+  line-height: 1.75;
+  max-width: 52ch;
+  margin-block: 0.5rem;
+}
+
+.camping__cta {
+  align-self: flex-start;
+  margin-top: $space-xs;
+}

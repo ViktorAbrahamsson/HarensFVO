@@ -1,0 +1,35 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.page-header {
+  background-color: $color-ink;
+  color: $color-white;
+  padding-block: $space-lg;
+  padding-top: calc(#{$navbar-height} + #{$space-lg});
+  border-bottom: 1px solid rgba($color-white, 0.08);
+}
+
+.page-header__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $color-honey;
+  margin-bottom: 0.5rem;
+}
+
+.page-header__title {
+  font-family: $font-heading;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  color: $color-white;
+  max-width: 22ch;
+}
+
+.page-header__subtitle {
+  margin-top: $space-sm;
+  font-size: 1.05rem;
+  color: rgba($color-white, 0.75);
+  max-width: 54ch;
+  line-height: 1.6;
+}
