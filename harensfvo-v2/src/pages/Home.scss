@@ -228,6 +228,7 @@
 
 // ── Depth map (white mat frame + lightbox trigger) ─────────
 .facts__map-frame {
+  width: 100%;
   background: $color-white;
   border-radius: 2px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
