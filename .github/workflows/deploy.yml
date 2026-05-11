@@ -29,18 +29,11 @@ jobs:
         run: pnpm build
         working-directory: harensfvo-v2
 
-      # TODO: Uncomment and fill in once One.com FTP credentials are added to GitHub secrets.
-      # Go to GitHub repo → Settings → Secrets and variables → Actions and add:
-      #   FTP_SERVER   — your One.com FTP hostname (e.g. ftp.harensfvo.se)
-      #   FTP_USERNAME — your One.com FTP username
-      #   FTP_PASSWORD — your One.com FTP password
-      # Then set server-dir to your One.com webroot (commonly /public_html/ or /).
-
-      # - name: Deploy via FTP
-      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      #   with:
-      #     server: ${{ secrets.FTP_SERVER }}
-      #     username: ${{ secrets.FTP_USERNAME }}
-      #     password: ${{ secrets.FTP_PASSWORD }}
-      #     local-dir: harensfvo-v2/dist/
-      #     server-dir: /public_html/
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: harensfvo-v2/dist/
+          server-dir: /public_html/
