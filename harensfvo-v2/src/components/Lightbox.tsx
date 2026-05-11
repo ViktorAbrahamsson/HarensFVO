@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import './Lightbox.scss'
 
 interface Props {
@@ -8,10 +8,15 @@ interface Props {
 }
 
 export default function Lightbox({ src, alt, onClose }: Props) {
+  const closeRef = useRef<HTMLButtonElement>(null)
+
   useEffect(() => {
+    closeRef.current?.focus()
+    document.body.style.overflow = 'hidden'
+
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
     document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
+
     return () => {
       document.removeEventListener('keydown', onKey)
       document.body.style.overflow = ''
@@ -19,8 +24,22 @@ export default function Lightbox({ src, alt, onClose }: Props) {
   }, [onClose])
 
   return (
-    <div className="lightbox" onClick={onClose} role="dialog" aria-modal aria-label={alt}>
-      <button className="lightbox__close" onClick={onClose} aria-label="Stäng">✕</button>
+    <div
+      className="lightbox"
+      onClick={onClose}
+      role="dialog"
+      aria-modal
+      aria-label={alt}
+    >
+      <button
+        ref={closeRef}
+        type="button"
+        className="lightbox__close"
+        onClick={onClose}
+        aria-label="Stäng"
+      >
+        ✕
+      </button>
       <img
         src={src}
         alt={alt}

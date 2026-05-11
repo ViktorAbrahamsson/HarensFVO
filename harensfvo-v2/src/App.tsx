@@ -10,6 +10,7 @@ import Camping from './pages/Camping'
 function Layout() {
   return (
     <>
+      <a href="#main-content" className="skip-link">Hoppa till innehåll</a>
       <ScrollRestoration />
       <Navbar />
       <Outlet />
@@ -22,11 +23,11 @@ const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-      { path: '/', element: <Home /> },
-      { path: '/fiskekort', element: <FiskekortRegler /> },
-      { path: '/fiskarter', element: <Fiskarter /> },
+      { path: '/',            element: <Home /> },
+      { path: '/fiskekort',   element: <FiskekortRegler /> },
+      { path: '/fiskarter',   element: <Fiskarter /> },
       { path: '/information', element: <Information /> },
-      { path: '/camping', element: <Camping /> },
+      { path: '/camping',     element: <Camping /> },
     ],
   },
 ])

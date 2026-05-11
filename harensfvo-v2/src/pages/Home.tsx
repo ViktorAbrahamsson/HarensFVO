@@ -2,15 +2,17 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { homeCards, lakeFacts, fishingPermitUrl } from '../data/content'
 import Lightbox from '../components/Lightbox'
+import { useTitle } from '../hooks/useTitle'
 import './Home.scss'
 
 export default function Home() {
+  useTitle()
   const [lightboxOpen, setLightboxOpen] = useState(false)
 
   return (
-    <main>
-      <section className="hero">
-        <div className="hero__overlay" />
+    <main id="main-content">
+      <section className="hero" aria-label="Välkommen till Härens Fiskevårdsförening">
+        <div className="hero__overlay" aria-hidden="true" />
         <div className="hero__content">
           <p className="hero__eyebrow">Gnosjö, Sverige</p>
           <h1 className="hero__title">
@@ -29,39 +31,44 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero__scroll" aria-hidden>
+        <div className="hero__scroll" aria-hidden="true">
           <span />
         </div>
       </section>
 
-      <section className="section highlights">
+      <section className="section highlights" aria-label="Snabblänkar">
         <div className="container">
           <div className="highlights__grid">
             {homeCards.map((card, i) => (
-              <Link to={card.route} key={card.route} className="highlights__item">
-                <span className="highlights__item-number">0{i + 1}</span>
-                <hr className="highlights__item-rule" />
+              <Link
+                to={card.route}
+                key={card.route}
+                className="highlights__item"
+                aria-label={`Läs mer om ${card.title}`}
+              >
+                <span className="highlights__item-number" aria-hidden="true">0{i + 1}</span>
+                <hr className="highlights__item-rule" aria-hidden="true" />
                 <div
                   className="highlights__item-image"
                   style={{ backgroundImage: `url(${card.img})` }}
-                  aria-hidden
+                  aria-hidden="true"
                 />
                 <h2 className="highlights__item-title">{card.title}</h2>
                 <p className="highlights__item-description">{card.text}</p>
-                <span className="highlights__item-arrow">Läs mer →</span>
+                <span className="highlights__item-arrow" aria-hidden="true">Läs mer →</span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section facts">
+      <section className="section facts" aria-labelledby="facts-heading">
         <div className="container">
           <div className="facts__grid">
             <div>
               <p className="facts__label">Om sjön</p>
-              <h2 className="facts__title">Hären</h2>
-              <hr className="divider" />
+              <h2 className="facts__title" id="facts-heading">Hären</h2>
+              <hr className="divider" aria-hidden="true" />
               <dl className="facts__list">
                 {lakeFacts.map(f => (
                   <div key={f.title} className="facts__row">
@@ -74,16 +81,17 @@ export default function Home() {
 
             <div>
               <button
-                className="facts__map-button"
+                type="button"
+                className="facts__map-frame"
                 onClick={() => setLightboxOpen(true)}
-                aria-label="Förstora djupkartan"
+                aria-label="Förstora djupkartan över Hären"
               >
                 <img
                   src="/images/djupkarta.png"
                   alt="Djupkarta över sjön Hären"
                   className="facts__map-image"
                 />
-                <span className="facts__map-hint">Klicka för att förstora</span>
+                <span className="facts__map-hint" aria-hidden="true">Klicka för att förstora</span>
               </button>
             </div>
           </div>

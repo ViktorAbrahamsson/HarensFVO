@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#2c4a2e"/>
+  <!-- Fish: forked tail + body in one path -->
+  <path d="M7,11 L11,14 Q19,8 27,16 Q19,24 11,18 L7,21 L9,16 Z" fill="#f0ebe3"/>
+  <!-- Eye -->
+  <circle cx="22" cy="15" r="1.6" fill="#2c4a2e"/>
+  <!-- Pupil highlight -->
+  <circle cx="22.5" cy="14.5" r="0.55" fill="#f0ebe3"/>
+</svg>

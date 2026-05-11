@@ -15,13 +15,56 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+// Respect reduced-motion preference
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+// ── Skip link ──────────────────────────────────────────────
+.skip-link {
+  position: fixed;
+  top: $space-xs;
+  left: $space-sm;
+  z-index: 9999;
+  padding: 0.6rem 1.2rem;
+  background: $color-ink;
+  color: $color-white;
+  font-family: $font-body;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 2px;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.15s ease;
+
+  &:focus {
+    transform: translateY(0);
+    outline: 2px solid $color-honey;
+    outline-offset: 2px;
+  }
+}
+
 body {
   font-family: $font-body;
   font-size: 1rem;
   line-height: 1.65;
   color: $color-ink;
   background-color: $color-bg;
-  // No padding-top — navbar overlays the hero; inner pages add their own offset
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 img {
@@ -109,6 +152,19 @@ h1, h2, h3, h4 {
       color: $color-white;
     }
   }
+}
+
+// ── Visually hidden (screen-reader only) ───────────────────
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 // ── Divider ────────────────────────────────────────────────

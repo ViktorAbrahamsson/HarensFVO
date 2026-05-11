@@ -9,6 +9,9 @@
   border: 1px solid $color-border;
   border-radius: 2px;
   overflow: hidden;
+  list-style: none;
+
+  li { display: contents; }
 }
 
 .fish-species__card {
