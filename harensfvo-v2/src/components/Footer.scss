@@ -16,12 +16,10 @@
   border-bottom: 1px solid rgba($color-white, 0.08);
 
   @include md-down {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: $space-md;
     padding-block: $space-md;
   }
-
-  @include sm-down { grid-template-columns: 1fr; }
 }
 
 .footer__brand {
@@ -59,7 +57,7 @@
   gap: 0.6rem;
   justify-self: center;
 
-  @include sm-down { justify-self: start; }
+  @include md-down { justify-self: start; }
 }
 
 .footer__nav-link {
@@ -80,7 +78,7 @@
   font-style: normal;
   justify-self: end;
 
-  @include sm-down { justify-self: start; }
+  @include md-down { justify-self: start; }
 }
 
 .footer__contact-label {

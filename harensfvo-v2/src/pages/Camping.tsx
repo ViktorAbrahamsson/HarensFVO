@@ -11,7 +11,7 @@ export default function Camping() {
       <PageHeader
         label="Boende"
         title="Camping"
-        subtitle="Nära Hären finns Välornas Camping — ett utmärkt basläger för din fisketur i naturen."
+        subtitle="Nära Hären finns Gnosjö Strand — ett utmärkt basläger för din fisketur i naturen."
       />
 
       <section className="section" aria-labelledby="camping-heading">
@@ -25,11 +25,11 @@ export default function Camping() {
               />
             </div>
             <div className="camping__content">
-              <p className="camping__content-label">Välornas Camping</p>
+              <p className="camping__content-label">Gnosjö Strand</p>
               <h2 className="camping__content-title" id="camping-heading">Sov nära vattnet</h2>
               <hr className="divider" aria-hidden="true" />
               <p className="camping__content-text">
-                Välornas Camping erbjuder ett naturskönt läge i Västra Småland, perfekt för
+                Gnosjö Strand erbjuder ett naturskönt läge i Västra Småland, perfekt för
                 dig som vill kombinera fiske i Hären med ett bekvämt och naturligt boende.
                 Hit är du varmt välkommen — oavsett om du är erfaren sportfiskare eller nybörjare.
               </p>
@@ -39,7 +39,7 @@ export default function Camping() {
                 rel="noopener noreferrer"
                 className="btn btn--outline-dark camping__cta"
               >
-                Besök Välornas Camping <span aria-hidden="true">→</span>
+                Besök Gnosjö Strand <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

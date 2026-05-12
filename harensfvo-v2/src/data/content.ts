@@ -141,7 +141,7 @@ export const contact: Contact = {
 }
 
 export const fishingPermitUrl =
-  'https://www.fiskekort.se/app/index.php?page=cards&shop=514'
+  'https://www.ifiske.se/fiske-haren.htm'
 
 export const campingUrl =
-  'https://caravanclub.se/camping/valorna/#information'
+  'https://www.gnosjostrand.se/en'

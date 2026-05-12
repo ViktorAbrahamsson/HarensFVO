@@ -22,7 +22,7 @@ export default function FiskekortRegler() {
             rel="noopener noreferrer"
             className="btn btn--outline"
           >
-            Köp fiskekort på fiskekort.se →
+            Köp fiskekort på iFISKE.se →
           </a>
         </div>
       </section>
