@@ -11,7 +11,7 @@ export default function FiskekortRegler() {
       <PageHeader
         label="Fiskekort & Regler"
         title="Fiska i Hären"
-        subtitle="Köp ditt fiskekort via fiskekort.se. Välj det alternativ som passar din fisketur bäst."
+        subtitle="Köp ditt fiskekort via ifiske.se. Välj det alternativ som passar din fisketur bäst."
       />
 
       <section className="section fishing-permit__buy" aria-label="Köp fiskekort">
